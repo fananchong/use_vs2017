@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package usercmd;
+
+// 请求登录
+message MsgLogin {
+    required string name     = 1; // 昵称
+    required string key      = 2; // 验证的密钥
+}

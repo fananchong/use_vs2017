@@ -1,0 +1,1 @@
+./protoc --out=. wilds.proto
