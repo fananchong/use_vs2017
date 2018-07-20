@@ -19,7 +19,7 @@
     {
       "name": "Linux-Debug",
       "generator": "Unix Makefiles",
-      "remoteMachineName": "${defaultRemoteMachineName}",
+      "remoteMachineName": "127.0.0.1",
       "configurationType": "Debug",
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
