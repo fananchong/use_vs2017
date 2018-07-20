@@ -1,4 +1,4 @@
-## 说明
+## example1
 
 本例子，参照 https://github.com/Microsoft/vcpkg/blob/master/docs/examples/using-sqlite.md
 

@@ -1,4 +1,4 @@
-## 说明
+## example2
 
 本例子中，
 
@@ -10,6 +10,6 @@
 
 - **Linux-Debug**
 
-  vs2017 编写调试 linux代码，且通过 vcpkg 使用第 3方库
+  vs2017 编写调试 linux 代码，且通过 vcpkg 使用第 3 方库
 
   Linux 机需要安装 vcpkg 相关内容
