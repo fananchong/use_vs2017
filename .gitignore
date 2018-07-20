@@ -38,3 +38,5 @@ Debug
 Release
 build
 install
+protobuf
+protoc

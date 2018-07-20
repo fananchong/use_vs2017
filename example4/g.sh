@@ -1,1 +1,1 @@
-./protoc --out=. wilds.proto
+./protoc --cpp_out=. wilds.proto

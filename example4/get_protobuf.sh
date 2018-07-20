@@ -6,12 +6,13 @@ if [ ! -d "./protobuf" ];then
 fi
 
 # 不存在 protoc ，则编译之
-if [ ! -f "./protobuf/src/.libs/protoc" ];then
+if [ ! -f "./protobuf/src/protoc" ];then
 	cd ./protobuf
 	./autogen.sh
-	./configure CFLAGS="-static"
+	./configure LDFLAGS="-static"
 	make
+	make install
 	cd ..
 fi
 
-cp -f ./protobuf/src/.libs/protoc ./
+cp -f ./protobuf/src/protoc .
