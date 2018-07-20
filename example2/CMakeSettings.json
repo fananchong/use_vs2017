@@ -19,7 +19,7 @@
     {
       "name": "Linux-Debug",
       "generator": "Unix Makefiles",
-      "remoteMachineName": "127.0.0.1",
+      "remoteMachineName": "${defaultRemoteMachineName}",
       "configurationType": "Debug",
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
@@ -47,6 +47,40 @@
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
           "value": "/root/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        }
+      ]
+    },
+    {
+      "name": "Linux-Debug-localhost",
+      "generator": "Unix Makefiles",
+      "remoteMachineName": "127.0.0.1",
+      "configurationType": "Debug",
+      "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
+      "cmakeExecutable": "/usr/local/bin/cmake",
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build-localhost\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install-localhost\\${name}",
+      "remoteBuildRoot": "/projects/example2/${name}",
+      "remoteInstallRoot": "/projects/example2/${name}",
+      "remoteCopySources": true,
+      "remoteCopySourcesOutputVerbosity": "Normal",
+      "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [
+        ".vs",
+        ".git"
+      ],
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [
+        "linux_x64"
+      ],
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/vcpkg/scripts/buildsystems/vcpkg.cmake"
         }
       ]
     }
