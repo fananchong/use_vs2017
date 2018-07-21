@@ -12,3 +12,10 @@ RUN ln -s /usr/local/bin/cmake /usr/bin/cmake
  
 RUN git clone https://github.com/Microsoft/vcpkg.git &&\
  cd ./vcpkg && ./bootstrap-vcpkg.sh && ./vcpkg integrate install
+
+
+VOLUME ["/vcpkg"]
+VOLUME ["/projects"]
+
+EXPOSE 22
+
