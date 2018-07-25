@@ -1,1 +1,3 @@
-./protoc --cpp_out=. wilds.proto
+#!/bin/bash
+
+./protoc --cpp_out=. *.proto
