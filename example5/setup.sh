@@ -4,7 +4,7 @@ docker build -t vs2017_gdb .
 
 docker rm -f vs2017_gdb
 
-docker run -d --restart always -v /d/vcpkg:/vcpkg -v /c/Users/fananchong/Desktop:/projects -p 1022:22 --name vs2017_gdb vs2017_gdb
+docker run -d --restart always -v /d/vcpkg:/vcpkg -v /c/Users/fananchong/Desktop/projects:/projects -p 1022:22 --name vs2017_gdb vs2017_gdb
 
 #docker tag vs2017_gdb:latest fananchong/vs2017_gdb:latest
 
